@@ -1,0 +1,105 @@
+.bar {
+  width: 2rem;
+  background-color: var(--secondary-color);
+  border-radius: 0.2rem 0.2rem 0 0;
+  transition: 100ms all ease-in;
+}
+
+.sort__canvas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sort__canvas__bar-graph {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-top: 5rem;
+  border-bottom: 2px solid var(--secondary-color);
+  height: 22rem;
+  margin-bottom: 0.4rem;
+}
+
+.sort__canvas__info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 30rem;
+  color: var(--secondary-color);
+  margin-bottom: 2rem;
+}
+
+.sort__canvas__info-swapping,
+.sort__canvas__info-comparing,
+.sort__canvas__info-sorted {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sort__canvas__info-swapping > div,
+.sort__canvas__info-comparing > div,
+.sort__canvas__info-sorted > div {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.15rem;
+}
+
+.sort__canvas__info-swapping > div {
+  background-color: var(--swapping-color);
+}
+
+.sort__canvas__info-comparing > div {
+  background-color: var(--comparing-color);
+}
+
+.sort__canvas__info-sorted > div {
+  background-color: var(--sorted-color);
+}
+
+.sort__canvas__btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sort__canvas__btns > button,
+.sort__canvas__btns-speed > button {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 1rem 0;
+  border-radius: 0.4rem;
+  background-color: #cff3ff;
+  cursor: pointer;
+  width: 10rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25),
+    -5px -5px 10px rgba(99, 99, 99, 0.27);
+}
+
+.sort__canvas__btns > button:hover,
+.sort__canvas__btns-speed > button:hover {
+  transition: 200ms all ease-in;
+  background-color: #a9d6e5;
+}
+
+.sort__canvas__btns-speed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sort__canvas__btns-speed > button {
+  width: 3rem;
+  padding: 0.65rem 0;
+  font-size: 1.4rem;
+}
+
+.sort__canvas__btns-speed > h4 {
+  color: var(--secondary-color);
+  font-size: 1.1rem;
+  margin: 0 0.6rem;
+}
